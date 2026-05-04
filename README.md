@@ -12,9 +12,12 @@
   <img src="https://github.com/openpeeps/libspf-nim/workflows/test/badge.svg" alt="Github Actions">  <img src="https://github.com/openpeeps/libspf-nim/workflows/docs/badge.svg" alt="Github Actions">
 </p>
 
+### About
 This library provides low-level bindings to the Sender Policy Framework (SPF) library, which allows email systems such as Sendmail, Postfix, Exim, Zmailer and MS Exchange to check SPF records and make sure that the email is authorized by the domain name that it is coming from. This prevents email forgery, commonly used by spammers, scammers and email viruses/worms. For more details, [check the libspf2.net](https://www.libspf2.net/) website.
 
-**Check out the [/tests](https://github.com/openpeeps/libspf-nim/tree/main/tests) directory for example usage!**
+
+### Tests & Examples
+Check out the [/tests](https://github.com/openpeeps/libspf-nim/tree/main/tests) directory for example usage!
 
 ### ❤ Contributions & Support
 - 🐛 Found a bug? [Create a new Issue](https://github.com/openpeeps/libspf-nim/issues)
