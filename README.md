@@ -1,5 +1,5 @@
 <p align="center">
-  Nim bindings for [SPF Library](https://github.com/shevek/libspf2)<br>
+  Nim bindings for <a href="https://github.com/shevek/libspf2">SPF Library</a><br>
   A C library for parsing and evaluating SPF records
 </p>
 
