@@ -33,16 +33,6 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           
       - run: nimble install -Y
-      - name: Build with libspf2 flags
-        shell: bash
-        run: |
-          CFLAGS="$(pkg-config --cflags libspf2)"
-          LIBS="$(pkg-config --libs libspf2)"
-          nim c --passC:"$CFLAGS" --passL:"$LIBS" src/spf.nim
-
-      - name: Test with libspf2 flags
-        shell: bash
-        run: |
-          CFLAGS="$(pkg-config --cflags libspf2)"
-          LIBS="$(pkg-config --libs libspf2)"
-          nimble test --passC:"$CFLAGS" --passL:"$LIBS"
+      - run: |
+          nim c --passC:"-I/usr/include/spf2 -I/usr/include" --passL:"-L/usr/lib/x86_64-linux-gnu -lspf2" src/spf.nim
+      - run: nimble test

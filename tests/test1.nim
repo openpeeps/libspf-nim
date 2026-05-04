@@ -2,8 +2,8 @@ when defined(macos):
   {.passL:"-L/usr/local/lib -lspf2".}
   {.passC:"-I/usr/local/include/spf2".}
 elif defined(linux):
-  {.passL:"-L/opt/local/lib -lspf2".}
-  {.passC:"-I/opt/include/spf2".}
+  {.passL:"-L/usr/lib/x86_64-linux-gnu -lspf2".}
+  {.passC:"-I/usr/include/spf2".}
 
 import unittest, strutils
 import ../src/spf
