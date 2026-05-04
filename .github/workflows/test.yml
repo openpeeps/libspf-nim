@@ -31,5 +31,5 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           
       - run: nimble install -Y
-      - run: nim c -r src/${{ github.event.repository.name }}.nim
+      - run: nim c -r src/spf.nim
       - run: nimble test
