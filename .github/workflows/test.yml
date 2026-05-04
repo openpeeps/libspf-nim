@@ -22,8 +22,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install libspf2
-        run: sudo apt-get update && sudo apt-get install -y libspf2
+      - name: Build and install libspf2 from source
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git build-essential autoconf automake libtool
+          git clone --depth=1 https://github.com/shevek/libspf2.git
+          cd libspf2
+          ./autogen.sh
+          ./configure
+          make
+          sudo make install
+          sudo ldconfig
+          cd ..
 
       - uses: jiro4989/setup-nim-action@v1
         with:
