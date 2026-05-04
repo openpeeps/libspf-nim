@@ -3,11 +3,11 @@ on:
   push:
     tags:
       - '*.*.*'
-    # branches:
-    #   - main
+    branches:
+      - main
 env:
   nim-version: 'stable'
-  nim-src: src/${{ github.event.repository.name }}.nim
+  nim-src: src/spf.nim
   deploy-dir: .gh-pages
 jobs:
   docs:
