@@ -1,0 +1,2 @@
+nimTitle	spf_dns_resolv	spf/spf_dns_resolv.html	module spf/spf_dns_resolv		0
+nim	SPF_dns_resolv_new	spf/spf_dns_resolv.html#SPF_dns_resolv_new,SPF_dns_server_t,cstring,cint	proc SPF_dns_resolv_new(layer_below: SPF_dns_server_t; name: cstring; debug: cint): SPF_dns_server_t		11

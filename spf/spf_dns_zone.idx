@@ -1,0 +1,4 @@
+nimTitle	spf_dns_zone	spf/spf_dns_zone.html	module spf/spf_dns_zone		0
+nim	SPF_dns_zone_new	spf/spf_dns_zone.html#SPF_dns_zone_new,SPF_dns_server,cstring,cint	proc SPF_dns_zone_new(layer_below: SPF_dns_server; name: cstring; debug: cint): SPF_dns_server		13
+nim	SPF_dns_zone_add_str	spf/spf_dns_zone.html#SPF_dns_zone_add_str,SPF_dns_server,cstring,cint,SPF_dns_stat_t,cstring	proc SPF_dns_zone_add_str(spf_dns_server: SPF_dns_server; domain: cstring;\n                     rr_type: cint; herrno: SPF_dns_stat_t; data: cstring): SPF_errcode_t		14
+nim	SPF_dns_test_new	spf/spf_dns_zone.html#SPF_dns_test_new,SPF_dns_server,cstring,cint	proc SPF_dns_test_new(layer_below: SPF_dns_server; name: cstring; debug: cint): SPF_dns_server		18

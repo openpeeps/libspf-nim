@@ -1,0 +1,7 @@
+nimTitle	spf_dns_rr	spf/spf_dns_rr.html	module spf/spf_dns_rr		0
+nim	SPF_dns_rr_new	spf/spf_dns_rr.html#SPF_dns_rr_new	proc SPF_dns_rr_new(): SPF_dns_rr		11
+nim	SPF_dns_rr_free	spf/spf_dns_rr.html#SPF_dns_rr_free,SPF_dns_rr	proc SPF_dns_rr_free(spfrr: SPF_dns_rr)		12
+nim	SPF_dns_rr_new_init	spf/spf_dns_rr.html#SPF_dns_rr_new_init,SPF_dns_server,cstring,cint,cint,SPF_dns_stat_t	proc SPF_dns_rr_new_init(spf_dns_server: SPF_dns_server; domain: cstring;\n                    rr_type: cint; ttl: cint; herrno: SPF_dns_stat_t): SPF_dns_rr		13
+nim	SPF_dns_rr_new_nxdomain	spf/spf_dns_rr.html#SPF_dns_rr_new_nxdomain,SPF_dns_server,cstring	proc SPF_dns_rr_new_nxdomain(spf_dns_server: SPF_dns_server; domain: cstring): SPF_dns_rr		14
+nim	SPF_dns_rr_buf_realloc	spf/spf_dns_rr.html#SPF_dns_rr_buf_realloc,SPF_dns_rr,cint,csize_t	proc SPF_dns_rr_buf_realloc(spfrr: SPF_dns_rr; idx: cint; len: csize_t): SPF_errcode_t		15
+nim	SPF_dns_rr_dup	spf/spf_dns_rr.html#SPF_dns_rr_dup,ptr.SPF_dns_rr,SPF_dns_rr	proc SPF_dns_rr_dup(dstp: ptr SPF_dns_rr; src: SPF_dns_rr): SPF_errcode_t		16

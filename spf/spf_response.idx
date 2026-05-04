@@ -1,0 +1,25 @@
+nimTitle	spf_response	spf/spf_response.html	module spf/spf_response		0
+nim	SPF_response_new	spf/spf_response.html#SPF_response_new,SPF_request	proc SPF_response_new(spf_request: SPF_request): SPF_response		11
+nim	SPF_response_free	spf/spf_response.html#SPF_response_free,SPF_response	proc SPF_response_free(rp: SPF_response)		12
+nim	SPF_response_combine	spf/spf_response.html#SPF_response_combine,SPF_response,SPF_response	proc SPF_response_combine(main: SPF_response; r2mx: SPF_response): SPF_response		13
+nim	SPF_response_result	spf/spf_response.html#SPF_response_result,SPF_response	proc SPF_response_result(rp: SPF_response): SPF_result_t		15
+nim	SPF_response_reason	spf/spf_response.html#SPF_response_reason,SPF_response	proc SPF_response_reason(rp: SPF_response): SPF_reason_t		16
+nim	SPF_response_errcode	spf/spf_response.html#SPF_response_errcode,SPF_response	proc SPF_response_errcode(rp: SPF_response): SPF_errcode_t		17
+nim	SPF_response_get_received_spf	spf/spf_response.html#SPF_response_get_received_spf,SPF_response	proc SPF_response_get_received_spf(rp: SPF_response): cstring		18
+nim	SPF_response_get_received_spf_value	spf/spf_response.html#SPF_response_get_received_spf_value,SPF_response	proc SPF_response_get_received_spf_value(rp: SPF_response): cstring		19
+nim	SPF_response_get_header_comment	spf/spf_response.html#SPF_response_get_header_comment,SPF_response	proc SPF_response_get_header_comment(rp: SPF_response): cstring		20
+nim	SPF_response_get_smtp_comment	spf/spf_response.html#SPF_response_get_smtp_comment,SPF_response	proc SPF_response_get_smtp_comment(rp: SPF_response): cstring		21
+nim	SPF_response_get_explanation	spf/spf_response.html#SPF_response_get_explanation,SPF_response	proc SPF_response_get_explanation(rp: SPF_response): cstring		22
+nim	SPF_response_messages	spf/spf_response.html#SPF_response_messages,SPF_response	proc SPF_response_messages(rp: SPF_response): cint		24
+nim	SPF_response_errors	spf/spf_response.html#SPF_response_errors,SPF_response	proc SPF_response_errors(rp: SPF_response): cint		25
+nim	SPF_response_warnings	spf/spf_response.html#SPF_response_warnings,SPF_response	proc SPF_response_warnings(rp: SPF_response): cint		26
+nim	SPF_response_message	spf/spf_response.html#SPF_response_message,SPF_response,cint	proc SPF_response_message(rp: SPF_response; idx: cint): SPF_error		27
+nim	SPF_error_code	spf/spf_response.html#SPF_error_code,SPF_error	proc SPF_error_code(err: SPF_error): SPF_errcode_t		29
+nim	SPF_error_message	spf/spf_response.html#SPF_error_message,SPF_error	proc SPF_error_message(err: SPF_error): cstring		30
+nim	SPF_error_errorp	spf/spf_response.html#SPF_error_errorp,SPF_error	proc SPF_error_errorp(err: SPF_error): char		31
+nim	SPF_response_add_error_ptr	spf/spf_response.html#SPF_response_add_error_ptr,SPF_response,SPF_errcode_t,cstring,cstring,cstring	proc SPF_response_add_error_ptr(rp: SPF_response; code: SPF_errcode_t;\n                           text, tptr, format: cstring): SPF_errcode_t		33
+nim	SPF_response_add_error_idx	spf/spf_response.html#SPF_response_add_error_idx,SPF_response,SPF_errcode_t,cstring,cint,cstring	proc SPF_response_add_error_idx(rp: SPF_response; code: SPF_errcode_t; text: cstring;\n                           idx: cint; format: cstring): SPF_errcode_t		34
+nim	SPF_response_add_error	spf/spf_response.html#SPF_response_add_error,SPF_response,SPF_errcode_t,cstring	proc SPF_response_add_error(rp: SPF_response; code: SPF_errcode_t; format: cstring): SPF_errcode_t		35
+nim	SPF_response_add_warn_ptr	spf/spf_response.html#SPF_response_add_warn_ptr,SPF_response,SPF_errcode_t,cstring,cstring,cstring	proc SPF_response_add_warn_ptr(rp: SPF_response; code: SPF_errcode_t;\n                          text, tptr, format: cstring): SPF_errcode_t		36
+nim	SPF_response_add_warn_idx	spf/spf_response.html#SPF_response_add_warn_idx,SPF_response,SPF_errcode_t,cstring,cint,cstring	proc SPF_response_add_warn_idx(rp: SPF_response; code: SPF_errcode_t; text: cstring;\n                          idx: cint; format: cstring): SPF_errcode_t		37
+nim	SPF_response_add_warn	spf/spf_response.html#SPF_response_add_warn,SPF_response,SPF_errcode_t,cstring	proc SPF_response_add_warn(rp: SPF_response; code: SPF_errcode_t; format: cstring): SPF_errcode_t		38

@@ -1,0 +1,5 @@
+nimTitle	spf_dns_cache	spf/spf_dns_cache.html	module spf/spf_dns_cache		0
+nim	time_t	spf/spf_dns_cache.html#time_t	type time_t		9
+nim	SPF_dns_cache_new	spf/spf_dns_cache.html#SPF_dns_cache_new,SPF_dns_server_t,cstring,cint,cint	proc SPF_dns_cache_new(layer_below: SPF_dns_server_t; name: cstring; debug: cint;\n                  cache_bits: cint): SPF_dns_server_t		12
+nim	SPF_dns_cache_set_ttl	spf/spf_dns_cache.html#SPF_dns_cache_set_ttl,SPF_dns_server_t,time_t,time_t,time_t,time_t	proc SPF_dns_cache_set_ttl(spf_dns_server: SPF_dns_server_t; min_ttl: time_t;\n                      err_ttl: time_t; txt_ttl: time_t; rdns_ttl: time_t)		13
+nim	SPF_dns_set_conserve_cache	spf/spf_dns_cache.html#SPF_dns_set_conserve_cache,SPF_dns_server_t,cint	proc SPF_dns_set_conserve_cache(spf_dns_server: SPF_dns_server_t;\n                           conserve_cache: cint)		14

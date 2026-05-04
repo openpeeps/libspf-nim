@@ -1,0 +1,17 @@
+nimTitle	spf_request	spf/spf_request.html	module spf/spf_request		0
+nim	SPF_request_new	spf/spf_request.html#SPF_request_new,SPF_server	proc SPF_request_new(spf_server: SPF_server): SPF_request		11
+nim	SPF_request_free	spf/spf_request.html#SPF_request_free,SPF_request	proc SPF_request_free(sr: SPF_request)		12
+nim	SPF_request_set_ipv4	spf/spf_request.html#SPF_request_set_ipv4,SPF_request,in_addr	proc SPF_request_set_ipv4(sr: SPF_request; address: in_addr): SPF_errcode_t		13
+nim	SPF_request_set_ipv6	spf/spf_request.html#SPF_request_set_ipv6,SPF_request,in6_addr	proc SPF_request_set_ipv6(sr: SPF_request; address: in6_addr): SPF_errcode_t		14
+nim	SPF_request_set_ipv4_str	spf/spf_request.html#SPF_request_set_ipv4_str,SPF_request,cstring	proc SPF_request_set_ipv4_str(sr: SPF_request; astr: cstring): SPF_errcode_t		15
+nim	SPF_request_set_ipv6_str	spf/spf_request.html#SPF_request_set_ipv6_str,SPF_request,cstring	proc SPF_request_set_ipv6_str(sr: SPF_request; astr: cstring): SPF_errcode_t		16
+nim	SPF_request_set_helo_dom	spf/spf_request.html#SPF_request_set_helo_dom,SPF_request,cstring	proc SPF_request_set_helo_dom(sr: SPF_request; dom: cstring): SPF_errcode_t		17
+nim	SPF_request_set_env_from	spf/spf_request.html#SPF_request_set_env_from,SPF_request,cstring	proc SPF_request_set_env_from(sr: SPF_request; fromAddress: cstring): cint		18
+nim	SPF_request_get_rec_dom	spf/spf_request.html#SPF_request_get_rec_dom,SPF_request	proc SPF_request_get_rec_dom(sr: SPF_request): cstring		19
+nim	SPF_request_get_client_dom	spf/spf_request.html#SPF_request_get_client_dom,SPF_request	proc SPF_request_get_client_dom(sr: SPF_request): cstring		20
+nim	SPF_request_is_loopback	spf/spf_request.html#SPF_request_is_loopback,SPF_request	proc SPF_request_is_loopback(sr: SPF_request): cint		21
+nim	SPF_request_query_mailfrom	spf/spf_request.html#SPF_request_query_mailfrom,SPF_request,ptr.SPF_response	proc SPF_request_query_mailfrom(spf_request: SPF_request;\n                           spf_responsep: ptr SPF_response): SPF_errcode_t		23
+nim	SPF_request_query_rcptto	spf/spf_request.html#SPF_request_query_rcptto,SPF_request,ptr.SPF_response,cstring	proc SPF_request_query_rcptto(spf_request: SPF_request;\n                         spf_responsep: ptr SPF_response; rcpt_to: cstring): SPF_errcode_t		24
+nim	SPF_request_query_fallback	spf/spf_request.html#SPF_request_query_fallback,SPF_request,ptr.SPF_response,cstring	proc SPF_request_query_fallback(spf_request: SPF_request;\n                           spf_responsep: ptr SPF_response; record: cstring): SPF_errcode_t		25
+nim	SPF_request_get_exp	spf/spf_request.html#SPF_request_get_exp,SPF_server,SPF_request,SPF_response,SPF_record,ptr.cstring,ptr.csize_t	proc SPF_request_get_exp(spf_server: SPF_server; spf_request: SPF_request;\n                    spf_response: SPF_response; spf_record: SPF_record;\n                    bufp: ptr cstring; buflenp: ptr csize_t): SPF_errcode_t		27
+nim	SPF_i_done	spf/spf_request.html#SPF_i_done,SPF_response,SPF_result_t,SPF_reason_t,SPF_errcode_t	proc SPF_i_done(spf_response: SPF_response; result: SPF_result_t;\n           reason: SPF_reason_t; err: SPF_errcode_t): SPF_errcode_t		29

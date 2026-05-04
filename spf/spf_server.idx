@@ -1,0 +1,15 @@
+nimTitle	spf_server	spf/spf_server.html	module spf/spf_server		0
+nim	SPF_server_new	spf/spf_server.html#SPF_server_new,SPF_server_dnstype_t,cint	proc SPF_server_new(dnstype: SPF_server_dnstype_t; debug: cint): SPF_server		12
+nim	SPF_server_new_dns	spf/spf_server.html#SPF_server_new_dns,SPF_dns_server,cint	proc SPF_server_new_dns(dns: SPF_dns_server; debug: cint): SPF_server		13
+nim	SPF_server_free	spf/spf_server.html#SPF_server_free,SPF_server	proc SPF_server_free(sp: SPF_server)		14
+nim	SPF_server_set_rec_dom	spf/spf_server.html#SPF_server_set_rec_dom,SPF_server,cstring	proc SPF_server_set_rec_dom(sp: SPF_server; dom: cstring): SPF_errcode_t		15
+nim	SPF_server_set_sanitize	spf/spf_server.html#SPF_server_set_sanitize,SPF_server,cint	proc SPF_server_set_sanitize(sp: SPF_server; sanitize: cint): SPF_errcode_t		16
+nim	SPF_server_set_explanation	spf/spf_server.html#SPF_server_set_explanation,SPF_server,cstring,ptr.SPF_response_t	proc SPF_server_set_explanation(sp: SPF_server; exp: cstring;\n                           spf_responsep: ptr SPF_response_t): SPF_errcode_t		17
+nim	SPF_server_set_localpolicy	spf/spf_server.html#SPF_server_set_localpolicy,SPF_server,cstring,cint,ptr.SPF_response_t	proc SPF_server_set_localpolicy(sp: SPF_server; policy: cstring;\n                           use_default_whitelist: cint;\n                           spf_responsep: ptr SPF_response_t): SPF_errcode_t		18
+nim	SPF_server_get_record	spf/spf_server.html#SPF_server_get_record,SPF_server,SPF_request_t,SPF_response_t,ptr.SPF_record_t	proc SPF_server_get_record(spf_server: SPF_server; spf_request: SPF_request_t;\n                      spf_response: SPF_response_t;\n                      spf_recordp: ptr SPF_record_t): SPF_errcode_t		19
+nim	SPF_server_set_max_dns_mech	spf/spf_server.html#SPF_server_set_max_dns_mech,SPF_server,cint	proc SPF_server_set_max_dns_mech(spf_server: SPF_server; n: cint): SPF_errcode_t		22
+nim	SPF_server_get_max_dns_mech	spf/spf_server.html#SPF_server_get_max_dns_mech,SPF_server	proc SPF_server_get_max_dns_mech(spf_server: SPF_server): cint		23
+nim	SPF_server_set_max_dns_ptr	spf/spf_server.html#SPF_server_set_max_dns_ptr,SPF_server,cint	proc SPF_server_set_max_dns_ptr(spf_server: SPF_server; n: cint): SPF_errcode_t		24
+nim	SPF_server_get_max_dns_ptr	spf/spf_server.html#SPF_server_get_max_dns_ptr,SPF_server	proc SPF_server_get_max_dns_ptr(spf_server: SPF_server): cint		25
+nim	SPF_server_set_max_dns_mx	spf/spf_server.html#SPF_server_set_max_dns_mx,SPF_server,cint	proc SPF_server_set_max_dns_mx(spf_server: SPF_server; n: cint): SPF_errcode_t		26
+nim	SPF_server_get_max_dns_mx	spf/spf_server.html#SPF_server_get_max_dns_mx,SPF_server	proc SPF_server_get_max_dns_mx(spf_server: SPF_server): cint		27

@@ -1,0 +1,6 @@
+nimTitle	spf_dns	spf/spf_dns.html	module spf/spf_dns		0
+nim	SPF_dns_free	spf/spf_dns.html#SPF_dns_free,SPF_dns_server	proc SPF_dns_free(spf_dns_server: SPF_dns_server)		11
+nim	SPF_dns_lookup	spf/spf_dns.html#SPF_dns_lookup,SPF_dns_server,cstring,cint,cint	proc SPF_dns_lookup(spf_dns_server: SPF_dns_server; domain: cstring; rr_type: cint;\n               should_cache: cint): SPF_dns_rr		12
+nim	SPF_dns_rlookup	spf/spf_dns.html#SPF_dns_rlookup,SPF_dns_server,in_addr,cint,cint	proc SPF_dns_rlookup(spf_dns_server: SPF_dns_server; ipv4: in_addr; rr_type: cint;\n                should_cache: cint): SPF_dns_rr		13
+nim	SPF_dns_rlookup6	spf/spf_dns.html#SPF_dns_rlookup6,SPF_dns_server,in6_addr,cint,cint	proc SPF_dns_rlookup6(spf_dns_server: SPF_dns_server; ipv6: in6_addr; rr_type: cint;\n                 should_cache: cint): SPF_dns_rr		14
+nim	SPF_dns_get_client_dom	spf/spf_dns.html#SPF_dns_get_client_dom,SPF_dns_server,SPF_request	proc SPF_dns_get_client_dom(spf_dns_server: SPF_dns_server; sr: SPF_request): cstring		15

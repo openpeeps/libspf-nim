@@ -1,0 +1,6 @@
+nimTitle	spf_api	spf/spf_api.html	module spf/spf_api		0
+nim	SPF_strerror	spf/spf_api.html#SPF_strerror,SPF_errcode_t	proc SPF_strerror(spf_err: SPF_errcode_t): cstring		10
+nim	SPF_strresult	spf/spf_api.html#SPF_strresult,SPF_result_t	proc SPF_strresult(result: SPF_result_t): cstring		11
+nim	SPF_strreason	spf/spf_api.html#SPF_strreason,SPF_reason_t	proc SPF_strreason(reason: SPF_reason_t): cstring		12
+nim	SPF_get_lib_version	spf/spf_api.html#SPF_get_lib_version,ptr.cint,ptr.cint,ptr.cint	proc SPF_get_lib_version(major, minor, patch: ptr cint)		13
+nim	SPF_strrrtype	spf/spf_api.html#SPF_strrrtype,cint	proc SPF_strrrtype(rr_type: cint): cstring		14
